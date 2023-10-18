@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
+    <title>To-do List</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 </head>
+<body>
+    <div id="items"></div>
+    <template id="itemTemplate">
+        <div class="item">
+            <input type="checkbox" class="item-completed">
+            <input type="text" class="item-description" placeholder="To-do item...">
+        </div>
+    </template>
+    <button id="add">Add Item</button>
+    <script src="./script.js"></script>
+</body>
+<html>
+
+<!-- </head>
 <body>
     <script>
     //     <form onsubmit="return false">
@@ -14,6 +28,4 @@
     //         <button id="tombol_form">Tekan</button>
     // </form>
     // <p>Hasil teks <span id="hasil"></span></p>
-    <script src="main.js"></script>
-</body>
-<html>
+    <script src="main.js"></script> 
